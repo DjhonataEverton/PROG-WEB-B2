@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <style>
+        *{
+            border: none;
+            margin: none;
+            overflow: hidden;
+        }
+        body{
+            background-color: #2C5364;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .loginBox{
+            background-color: #0F2027;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            height: 300px;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .camposEntrada{
+            border: 2px  solid;
+            border-radius: 8px;
+            border-color: #203A43;
+            margin: 5px;
+            width: 200px;
+            height: 30px;
+        }
+        #enviar{
+            background-color: #203A43;
+            height: 30px;
+            width: 50px;
+            color: aliceblue;
+        }
+        .text{
+            color: aliceblue;
+        }
+
+    </style>
+    <title>Login</title>
+</head>
+<body>
+    <section class="loginBox">
+        <div class="campos">
+            <form action="POST">
+                <label class="text"for="email">EMAIL</label> <br>
+                <input class="camposEntrada" type="email" name="email" id="email">
+                <br>
+                <label class="text"for="senha">SENHA</label> <br>
+                <input class="camposEntrada" type="password" name="senha" id="senha">
+                <br>
+                <input type="submit" value="Enviar" id="enviar" >
+                <br>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
